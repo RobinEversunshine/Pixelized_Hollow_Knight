@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bms4d2h7ire0a"
+path="res://.godot/imported/sword_hit_reject.wav-0335980070a6b00615bc727ee4ced56e.sample"
+
+[deps]
+
+source_file="res://assets/sfx/The Knight/sword_hit_reject.wav"
+dest_files=["res://.godot/imported/sword_hit_reject.wav-0335980070a6b00615bc727ee4ced56e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,85 @@
+[gd_scene load_steps=5 format=3 uid="uid://b2ad37g2bis8p"]
+
+[ext_resource type="Script" path="res://main/game.gd" id="1_wok6m"]
+[ext_resource type="Script" path="res://ui/PauseMenu.gd" id="2_b7vge"]
+[ext_resource type="Theme" uid="uid://cffyb36ygo7ve" path="res://ui/game_theme.tres" id="3_pw1p3"]
+[ext_resource type="PackedScene" uid="uid://bih1t54w5gpc" path="res://ui/Settings.tscn" id="4_eccyu"]
+
+[node name="Game" type="Node"]
+process_mode = 3
+script = ExtResource("1_wok6m")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 100
+
+[node name="PauseMenu" type="Control" parent="CanvasLayer"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_b7vge")
+
+[node name="Panel" type="Panel" parent="CanvasLayer/PauseMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -106.0
+offset_top = -84.0
+offset_right = 106.0
+offset_bottom = 76.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/PauseMenu/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/PauseMenu/Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("3_pw1p3")
+text = "=Paused="
+
+[node name="continue" type="Button" parent="CanvasLayer/PauseMenu/Panel/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_pw1p3")
+text = "Continue"
+flat = true
+
+[node name="options" type="Button" parent="CanvasLayer/PauseMenu/Panel/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_pw1p3")
+text = "Options"
+flat = true
+
+[node name="quit_to_menu" type="Button" parent="CanvasLayer/PauseMenu/Panel/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_pw1p3")
+text = "Quit To Menu"
+flat = true
+
+[node name="quit_game" type="Button" parent="CanvasLayer/PauseMenu/Panel/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_pw1p3")
+text = "Quit Game"
+flat = true
+
+[node name="Settings" parent="CanvasLayer" node_paths=PackedStringArray("parent_node") instance=ExtResource("4_eccyu")]
+process_mode = 2
+visible = false
+parent_node = NodePath("../PauseMenu")
+
+[connection signal="pressed" from="CanvasLayer/PauseMenu/Panel/VBoxContainer/continue" to="CanvasLayer/PauseMenu" method="_on_resume_pressed"]
+[connection signal="pressed" from="CanvasLayer/PauseMenu/Panel/VBoxContainer/options" to="CanvasLayer/PauseMenu" method="_on_options_pressed"]
+[connection signal="pressed" from="CanvasLayer/PauseMenu/Panel/VBoxContainer/quit_to_menu" to="CanvasLayer/PauseMenu" method="_on_quit_to_menu_pressed"]
+[connection signal="pressed" from="CanvasLayer/PauseMenu/Panel/VBoxContainer/quit_game" to="CanvasLayer/PauseMenu" method="_on_exit_pressed"]

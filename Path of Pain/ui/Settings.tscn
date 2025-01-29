@@ -1,0 +1,100 @@
+[gd_scene load_steps=5 format=3 uid="uid://bih1t54w5gpc"]
+
+[ext_resource type="Script" path="res://ui/Settings.gd" id="1_62lo1"]
+[ext_resource type="Theme" uid="uid://cffyb36ygo7ve" path="res://ui/game_theme.tres" id="1_vwsmy"]
+[ext_resource type="Script" path="res://ui/VolumeSlider.gd" id="2_k8anu"]
+[ext_resource type="Script" path="res://ui/enable_instant_death.gd" id="3_v4lns"]
+
+[node name="Settings" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_62lo1")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -184.0
+offset_top = -128.0
+offset_right = 184.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme = ExtResource("1_vwsmy")
+text = "Master Volume"
+
+[node name="VolumeSlider" type="HSlider" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 2
+max_value = 1.0
+step = 0.1
+script = ExtResource("2_k8anu")
+bus_name = "Master"
+
+[node name="Label2" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme = ExtResource("1_vwsmy")
+text = "Sound Volume"
+
+[node name="VolumeSlider2" type="HSlider" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 2
+max_value = 1.0
+step = 0.1
+script = ExtResource("2_k8anu")
+bus_name = "SFX"
+
+[node name="Label3" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme = ExtResource("1_vwsmy")
+text = "Music Volume"
+
+[node name="VolumeSlider3" type="HSlider" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 2
+max_value = 1.0
+step = 0.1
+script = ExtResource("2_k8anu")
+bus_name = "Music"
+
+[node name="enable_instant_death" type="CheckButton" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme = ExtResource("1_vwsmy")
+button_pressed = true
+text = "Enable Instant Death"
+script = ExtResource("3_v4lns")
+
+[connection signal="toggled" from="Panel/VBoxContainer/enable_instant_death" to="Panel/VBoxContainer/enable_instant_death" method="_on_toggled"]

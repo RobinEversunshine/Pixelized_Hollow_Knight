@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cs2l2dfr35l86"
+path="res://.godot/imported/hero_run_footsteps_water.wav-050fa30d192be2c56e6a7b1d1bd838c5.sample"
+
+[deps]
+
+source_file="res://assets/sfx/The Knight/hero_run_footsteps_water.wav"
+dest_files=["res://.godot/imported/hero_run_footsteps_water.wav-050fa30d192be2c56e6a7b1d1bd838c5.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

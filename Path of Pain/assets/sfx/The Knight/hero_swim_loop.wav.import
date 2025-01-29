@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://4fbpowtifcq4"
+path="res://.godot/imported/hero_swim_loop.wav-4b1dc0f5bc8229fce433153c903391af.sample"
+
+[deps]
+
+source_file="res://assets/sfx/The Knight/hero_swim_loop.wav"
+dest_files=["res://.godot/imported/hero_swim_loop.wav-4b1dc0f5bc8229fce433153c903391af.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

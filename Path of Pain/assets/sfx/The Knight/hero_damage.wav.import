@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b1dtipu53obvc"
+path="res://.godot/imported/hero_damage.wav-930c2b3c84cd11ba75315fa30e1ce7c0.sample"
+
+[deps]
+
+source_file="res://assets/sfx/The Knight/hero_damage.wav"
+dest_files=["res://.godot/imported/hero_damage.wav-930c2b3c84cd11ba75315fa30e1ce7c0.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

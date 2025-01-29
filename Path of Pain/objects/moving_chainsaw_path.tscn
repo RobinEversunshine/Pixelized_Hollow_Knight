@@ -1,0 +1,117 @@
+[gd_scene load_steps=13 format=3 uid="uid://doyb2h3tdtp17"]
+
+[ext_resource type="Script" path="res://objects/moving_chainsaw_path.gd" id="1_krsry"]
+[ext_resource type="Texture2D" uid="uid://c50o7mr2r46yp" path="res://assets/objects/chainsaw_big.png" id="1_urolp"]
+[ext_resource type="Script" path="res://objects/chainsaw.gd" id="2_qgxsv"]
+[ext_resource type="AudioStream" uid="uid://bms4d2h7ire0a" path="res://assets/sfx/The Knight/sword_hit_reject.wav" id="4_yw30h"]
+[ext_resource type="AudioStream" uid="uid://qqw1mo0dd288" path="res://assets/sfx/saw/white_palace_saw_loop_1.wav" id="5_vppy6"]
+
+[sub_resource type="Animation" id="Animation_mntlx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PathFollow2D:progress_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_4wujv"]
+resource_name = "move"
+length = 2.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PathFollow2D:progress_ratio")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 3.86375),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_t68fm"]
+_data = {
+"RESET": SubResource("Animation_mntlx"),
+"move": SubResource("Animation_4wujv")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_52lqw"]
+radius = 34.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pjdio"]
+atlas = ExtResource("1_urolp")
+region = Rect2(0, 0, 68, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4euwn"]
+atlas = ExtResource("1_urolp")
+region = Rect2(68, 0, 68, 68)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qyi5l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pjdio")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4euwn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="moving chainsaw path" type="Path2D"]
+script = ExtResource("1_krsry")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_t68fm")
+}
+
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
+progress = 65.2904
+
+[node name="chainsaw" type="Area2D" parent="PathFollow2D"]
+script = ExtResource("2_qgxsv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/chainsaw"]
+shape = SubResource("CircleShape2D_52lqw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="PathFollow2D/chainsaw"]
+clip_children = 2
+sprite_frames = SubResource("SpriteFrames_qyi5l")
+autoplay = "default"
+frame_progress = 0.786812
+
+[node name="ColorRect2" type="ColorRect" parent="PathFollow2D/chainsaw/AnimatedSprite2D"]
+visible = false
+modulate = Color(0.262745, 0.262745, 0.411765, 0.360784)
+offset_left = -40.0
+offset_top = -40.0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="can_hit_jump" type="Node" parent="PathFollow2D/chainsaw"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="PathFollow2D"]
+stream = ExtResource("4_yw30h")
+bus = &"SFX"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_vppy6")
+volume_db = -10.0
+autoplay = true
+max_distance = 1500.0
+attenuation = 3.24901
+bus = &"SFX"
+
+[connection signal="body_entered" from="PathFollow2D/chainsaw" to="PathFollow2D/chainsaw" method="_on_body_entered"]

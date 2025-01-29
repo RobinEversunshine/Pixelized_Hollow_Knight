@@ -1,0 +1,56 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxs744bkcsjrg"]
+
+[ext_resource type="Script" path="res://sound/sound_player.gd" id="1_qavcf"]
+
+[node name="SoundPlayer" type="Node"]
+script = ExtResource("1_qavcf")
+
+[node name="SongPlayer" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+volume_db = -20.0
+bus = &"Music"
+
+[node name="SongPlayers" type="Node" parent="."]
+
+[node name="SongPlayer2" type="AudioStreamPlayer" parent="SongPlayers"]
+process_mode = 3
+volume_db = -20.0
+bus = &"Music"
+
+[node name="SongPlayer3" type="AudioStreamPlayer" parent="SongPlayers"]
+process_mode = 3
+volume_db = -20.0
+bus = &"Music"
+
+[node name="SongPlayer4" type="AudioStreamPlayer" parent="SongPlayers"]
+process_mode = 3
+volume_db = -20.0
+bus = &"Music"
+
+[node name="SongPlayer5" type="AudioStreamPlayer" parent="SongPlayers"]
+process_mode = 3
+volume_db = -20.0
+bus = &"Music"
+
+[node name="AudioPlayers" type="Node" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="AudioPlayers"]
+bus = &"SFX"
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="AudioPlayers"]
+bus = &"SFX"
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="AudioPlayers"]
+bus = &"SFX"
+
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="AudioPlayers"]
+bus = &"SFX"
+
+[node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="AudioPlayers"]
+bus = &"SFX"
+
+[node name="AudioStreamPlayer6" type="AudioStreamPlayer" parent="AudioPlayers"]
+bus = &"SFX"
+
+[node name="AudioStreamPlayer7" type="AudioStreamPlayer" parent="AudioPlayers"]
+bus = &"SFX"

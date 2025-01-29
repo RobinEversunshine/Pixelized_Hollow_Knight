@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://2pblgciuorfl"
+path="res://.godot/imported/hero_run_footsteps_grass.wav-b7721ce30f170c3c3b270c9122cc1f4e.sample"
+
+[deps]
+
+source_file="res://assets/sfx/The Knight/hero_run_footsteps_grass.wav"
+dest_files=["res://.godot/imported/hero_run_footsteps_grass.wav-b7721ce30f170c3c3b270c9122cc1f4e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

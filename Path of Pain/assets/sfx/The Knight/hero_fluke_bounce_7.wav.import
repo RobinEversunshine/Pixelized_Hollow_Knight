@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d2gfrpyl2s6e1"
+path="res://.godot/imported/hero_fluke_bounce_7.wav-ab4df8defa2a7b51f60e037d43d8bece.sample"
+
+[deps]
+
+source_file="res://assets/sfx/The Knight/hero_fluke_bounce_7.wav"
+dest_files=["res://.godot/imported/hero_fluke_bounce_7.wav-ab4df8defa2a7b51f60e037d43d8bece.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

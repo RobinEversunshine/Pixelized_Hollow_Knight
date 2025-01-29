@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cltb2v3omiwq7"
+path="res://.godot/imported/hero_jump.wav-2c3ed8d11a3cce4995249ef12bc58885.sample"
+
+[deps]
+
+source_file="res://assets/sfx/The Knight/hero_jump.wav"
+dest_files=["res://.godot/imported/hero_jump.wav-2c3ed8d11a3cce4995249ef12bc58885.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

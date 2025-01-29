@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://mbedxa0bl1fp"
+path="res://.godot/imported/hero_fury_charm_loop.wav-23d5f25d4904f8bf2625db554819d3fa.sample"
+
+[deps]
+
+source_file="res://assets/sfx/The Knight/hero_fury_charm_loop.wav"
+dest_files=["res://.godot/imported/hero_fury_charm_loop.wav-23d5f25d4904f8bf2625db554819d3fa.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

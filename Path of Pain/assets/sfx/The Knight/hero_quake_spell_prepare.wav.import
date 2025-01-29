@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://k7q16dwuovgx"
+path="res://.godot/imported/hero_quake_spell_prepare.wav-5e0d8b7e85ee1eeb3225ef0e3735c650.sample"
+
+[deps]
+
+source_file="res://assets/sfx/The Knight/hero_quake_spell_prepare.wav"
+dest_files=["res://.godot/imported/hero_quake_spell_prepare.wav-5e0d8b7e85ee1eeb3225ef0e3735c650.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

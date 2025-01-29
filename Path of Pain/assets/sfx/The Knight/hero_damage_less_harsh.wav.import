@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ccd5nhn3prq12"
+path="res://.godot/imported/hero_damage_less_harsh.wav-86d093c3c41c034e454f10d204fec721.sample"
+
+[deps]
+
+source_file="res://assets/sfx/The Knight/hero_damage_less_harsh.wav"
+dest_files=["res://.godot/imported/hero_damage_less_harsh.wav-86d093c3c41c034e454f10d204fec721.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

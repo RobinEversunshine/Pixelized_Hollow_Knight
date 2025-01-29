@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=3 uid="uid://dhcvt0glnsmon"]
+
+[ext_resource type="Texture2D" uid="uid://ypgad7oiq0ca" path="res://assets/background/background.png" id="1_06kfb"]
+[ext_resource type="Texture2D" uid="uid://c30yxmcjejp07" path="res://assets/background/background2.png" id="2_bg7yw"]
+
+[sub_resource type="GDScript" id="GDScript_2c5vp"]
+script/source = "extends ParallaxBackground
+
+
+var scrolling_speed = Vector2(10,-20)
+
+@onready var parallax_layer_3 = $ParallaxLayer3
+
+
+func _process(delta):
+	parallax_layer_3.motion_offset += scrolling_speed * delta
+"
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+script = SubResource("GDScript_2c5vp")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+position = Vector2(0, -30)
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(386, 0)
+
+[node name="Background2" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(192, -100)
+texture = ExtResource("1_06kfb")
+metadata/_edit_lock_ = true
+
+[node name="Background" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(192, 80)
+texture = ExtResource("1_06kfb")
+metadata/_edit_lock_ = true
+
+[node name="Background3" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(192, 528)
+texture = ExtResource("1_06kfb")
+flip_v = true
+metadata/_edit_lock_ = true
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(386, 288)
+
+[node name="Background2" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(192, 224)
+texture = ExtResource("2_bg7yw")
+metadata/_edit_lock_ = true

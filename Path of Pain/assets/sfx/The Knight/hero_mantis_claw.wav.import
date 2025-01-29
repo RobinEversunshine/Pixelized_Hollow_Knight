@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b3erfqce1gsp"
+path="res://.godot/imported/hero_mantis_claw.wav-4112ff7e71f7698c38da610e33d31747.sample"
+
+[deps]
+
+source_file="res://assets/sfx/The Knight/hero_mantis_claw.wav"
+dest_files=["res://.godot/imported/hero_mantis_claw.wav-4112ff7e71f7698c38da610e33d31747.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

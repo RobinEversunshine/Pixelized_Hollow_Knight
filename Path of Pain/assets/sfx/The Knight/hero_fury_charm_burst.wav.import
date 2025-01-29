@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://2l1a3hrkckp"
+path="res://.godot/imported/hero_fury_charm_burst.wav-e4aad5d9b210f378424a6b5d9d41b360.sample"
+
+[deps]
+
+source_file="res://assets/sfx/The Knight/hero_fury_charm_burst.wav"
+dest_files=["res://.godot/imported/hero_fury_charm_burst.wav-e4aad5d9b210f378424a6b5d9d41b360.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

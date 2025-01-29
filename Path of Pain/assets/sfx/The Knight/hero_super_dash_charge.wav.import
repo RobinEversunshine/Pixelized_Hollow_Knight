@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cor6j76ui0j0h"
+path="res://.godot/imported/hero_super_dash_charge.wav-f31c9f9b10e2027a2770ba55736f7bf9.sample"
+
+[deps]
+
+source_file="res://assets/sfx/The Knight/hero_super_dash_charge.wav"
+dest_files=["res://.godot/imported/hero_super_dash_charge.wav-f31c9f9b10e2027a2770ba55736f7bf9.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://crvmykc73npk0"
+path="res://.godot/imported/hero_quake_spell_dash.wav-c564594cb228311e181ecfbbc7c0a768.sample"
+
+[deps]
+
+source_file="res://assets/sfx/The Knight/hero_quake_spell_dash.wav"
+dest_files=["res://.godot/imported/hero_quake_spell_dash.wav-c564594cb228311e181ecfbbc7c0a768.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

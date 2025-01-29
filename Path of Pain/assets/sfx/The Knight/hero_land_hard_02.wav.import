@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bdyikdeom8nf0"
+path="res://.godot/imported/hero_land_hard_02.wav-ae3785d7d53b39e01bcb931fe9bb4ec7.sample"
+
+[deps]
+
+source_file="res://assets/sfx/The Knight/hero_land_hard_02.wav"
+dest_files=["res://.godot/imported/hero_land_hard_02.wav-ae3785d7d53b39e01bcb931fe9bb4ec7.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

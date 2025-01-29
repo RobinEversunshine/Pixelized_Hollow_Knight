@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ba7cvlv1o4j4m"
+path="res://.godot/imported/hero_parry.wav-11d15e78d2deb6b17d5600be0f5af8fd.sample"
+
+[deps]
+
+source_file="res://assets/sfx/The Knight/hero_parry.wav"
+dest_files=["res://.godot/imported/hero_parry.wav-11d15e78d2deb6b17d5600be0f5af8fd.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

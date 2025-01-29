@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://5lacpg2f5hck"
+path="res://.godot/imported/hero_shade_dash_charge_pt_2.wav-1a829b054ef6e09abbef3e35991bbc3f.sample"
+
+[deps]
+
+source_file="res://assets/sfx/The Knight/hero_shade_dash_charge_pt_2.wav"
+dest_files=["res://.godot/imported/hero_shade_dash_charge_pt_2.wav-1a829b054ef6e09abbef3e35991bbc3f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

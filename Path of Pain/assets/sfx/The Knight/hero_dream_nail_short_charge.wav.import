@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c0qwlloqgtr50"
+path="res://.godot/imported/hero_dream_nail_short_charge.wav-a243563e55aab205c47ef7b7fd31d33c.sample"
+
+[deps]
+
+source_file="res://assets/sfx/The Knight/hero_dream_nail_short_charge.wav"
+dest_files=["res://.godot/imported/hero_dream_nail_short_charge.wav-a243563e55aab205c47ef7b7fd31d33c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
