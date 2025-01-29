@@ -7,6 +7,8 @@ Assets & Arts Demo: https://www.artstation.com/artwork/EzaR0N
 The guide video of this game: https://youtu.be/7hBDyPOqoHY?si=OmI0ASAoo0Y0aErZ
 
 
+![photo](https://cdnb.artstation.com/p/assets/images/images/079/960/843/large/xinyu-robin-cai-guide-video-mp4-20240913-154321-088.jpg?1726257136)
+
 ![photo](https://cdnb.artstation.com/p/assets/images/images/079/960/845/large/xinyu-robin-cai-guide-video-mp4-20240913-154338-419.jpg?1726257139)
 
 ![photo](https://cdnb.artstation.com/p/assets/images/images/079/960/847/large/xinyu-robin-cai-guide-video-mp4-20240913-154427-950.jpg?1726257141)
@@ -16,6 +18,8 @@ The guide video of this game: https://youtu.be/7hBDyPOqoHY?si=OmI0ASAoo0Y0aErZ
 ![photo](https://cdnb.artstation.com/p/assets/images/images/079/960/851/large/xinyu-robin-cai-guide-video-mp4-20240913-154502-086.jpg?1726257147)
 
 ![photo](https://cdna.artstation.com/p/assets/images/images/079/960/852/large/xinyu-robin-cai-guide-video-mp4-20240913-154519-887.jpg?1726257149)
+
+![photo](https://cdnb.artstation.com/p/assets/images/images/079/960/855/large/xinyu-robin-cai-guide-video-mp4-20240913-154630-674.jpg?1726257153)
 
 ![photo](https://cdna.artstation.com/p/assets/images/images/079/960/860/large/xinyu-robin-cai-guide-video-mp4-20240913-154656-810.jpg?1726257155)
 
